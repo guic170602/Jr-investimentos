@@ -1,0 +1,63 @@
+/*Geral*/
+
+body{
+    font-size: 1em;
+    font-family: Palatino, "URW Palladio L", serif;
+    background-image: linear-gradient(to right,  goldenrod, gray);
+}
+
+/*CABEÇALHO*/
+
+header{
+    color: white;
+    padding: 15px;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 10px 15px #212121;
+}
+
+/*Titulo*/
+
+#area-logo{
+    margin-left: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#slogan{
+    font-size: 1.5rem;
+    margin-left:40px;
+}
+
+#slogan p{
+    margin: 10px 0;
+}
+
+/*Navegacao*/
+
+header nav{
+    margin-right: 3rem;
+}
+
+header ul{
+    display: flex;
+    width: max-content;
+}
+
+header a{
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+#atual{
+    color: goldenrod;
+}
+
+a:hover{
+    text-decoration: underline;
+}
