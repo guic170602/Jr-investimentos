@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Mohave:wght@300&display=swap');
 
 main {
-    width: 920px;
+    width: 940px;
+    box-sizing: border-box;
     margin: 0px auto 10px;
     padding: 15px;
     font-family: 'Mohave', sans-serif;
@@ -60,4 +61,8 @@ main #icons article img:hover{
 
 #bancos{
     margin-top: 20px;
+}
+
+#bancos h2{
+    margin-bottom: 10px;
 }

@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Mohave:wght@300&display=swap');
 
 main{
-    width: 920px;
+    width: 940px;
+    box-sizing: border-box;
     margin: 0 auto;
     padding: 30px 50px;
     font-family: 'Mohave', sans-serif;
