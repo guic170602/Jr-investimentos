@@ -1,88 +1,36 @@
-main{
-    position: absolute;
-    background: rgba(255, 243, 177, 0.44);
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -35%);
+@import url('https://fonts.googleapis.com/css2?family=Mohave:wght@300&display=swap');
+
+main {
+    width: 920px;
+    margin: 0px auto 10px;
     padding: 15px;
-    border-radius: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(68, 68, 68);
+    font-family: 'Mohave', sans-serif;
 }
 
-.inputBox{
-    background: none;
-    border: none;
-    border-bottom: 1px solid gray;
-    outline: none;
-    color: rgb(41, 41, 41);
-    font-size: 15px;
-    width: 100%;
-    letter-spacing: 2px;
+main #contato{
+    display: flex;
 }
 
-textarea{
-    border:1px solid rgba(128, 128, 128, 0.342);
-    background: none;
-    width: 100%;
-    font-size: 15px;
-    letter-spacing: 1.5px;
-    outline: none;
+main i{
+    font-size: 30px;
+    margin-right: 10px;
 }
 
-.inputBox:focus{
-    background: none
+#ache p:nth-child(-n+5){
+    border-bottom: 1px solid rgb(75, 54, 0);
 }
 
-article{
-    position: relative;
-    margin-bottom: 25px;
+main p {
+    font-size: 25px;
+    padding: 5px 0px;
+    margin: 0 10px;
 }
 
-fieldset{
-    border: 3px solid goldenrod;
-    padding: 20px;
-    padding-top: 25px;
-}
 
-legend{
-    border: 1px solid goldenrod;
-    padding: 15px;
-    text-align: center;
-    background-color: goldenrod;
-    border-radius: 8px;
-    color: rgb(68, 68, 68);
-    font-weight: bold;
-}
-
-.labelInput{
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    pointer-events: none;
-    transition: 0.5s;
-}
-
-.inputBox:focus ~ .labelInput, .inputBox:valid ~ .labelInput{
-    top: -20px;
-    font-size: 12px;
-    color: rgb(143, 108, 20);
-}
-
-button{
-    background: goldenrod;
-    line-height: 50px;
-    width: 100%;
-    border: none;
-    border-radius: 10px;
-    font-size: 1.5rem;
-    font-weight: bold;
-    font-family: serif;
-    box-shadow: 5px 5px 7px gray;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-button:hover{
-    letter-spacing: 2.5px;
+#ache{
+    margin-left: 10px;
+    padding: 10px 0;
+    height: max-content;
+    width: 322px;
+    box-sizing: border-box;
 }

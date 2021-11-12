@@ -1,22 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Mohave:wght@300&display=swap');
+
 main {
     width: 920px;
-    margin: 0 auto;
+    margin: 0px auto 10px;
     padding: 15px;
-    background: #e5e5e5;
+    font-family: 'Mohave', sans-serif;
+}
+
+main nav{
+    margin: 20px 35px 10px 0px;
 }
 
 main ul{
     display: flex;
     justify-content: space-evenly;
-    margin: 20px 25px 10px;
     border-radius: 30px;
     height: 2rem;
     line-height: 2rem;
-    background-color: #4d431d7e;
 }
 
 main > h1{
     text-align: center;
+    margin: 15px 20px 0 0;
 }
 
 main a{
@@ -26,7 +31,10 @@ main a{
 
 main a:hover{
     text-decoration: underline;
-    color: goldenrod;
+}
+
+main a h2{
+    font-size: 1.5rem;
 }
 
 main #icons{
@@ -37,6 +45,7 @@ main #icons{
     text-align: center;
     padding: 20px 0;
     box-shadow: 7px 7px 7px rgba(185, 185, 185, 0.35);
+    margin: 20px 25px 10px;
 }
 
 main #icons article img{
@@ -49,13 +58,6 @@ main #icons article img:hover{
     transition: 0.5s linear;
 }
 
-main #bancos img {
-    filter: grayscale(100%);
-    transition: 0.3s linear;
-}
-
-main #bancos img:hover {
-    box-shadow: 0 0 15px 5px gray;
-    filter: grayscale(10%);
-    transition: 0.3s linear;
+#bancos{
+    margin-top: 20px;
 }

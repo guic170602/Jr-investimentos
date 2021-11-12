@@ -1,7 +1,10 @@
-body, header, ul, a, p, h1, h2, h3{
+body, header, ul, a, p, h1, h2, h3, nav{
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
-    font-family: 'Times New Roman', Times, serif;
+}
+
+h1{
+    color:rgb(150, 97, 0)
 }

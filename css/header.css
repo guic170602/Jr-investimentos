@@ -1,9 +1,10 @@
 /*Geral*/
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 body{
     font-size: 1em;
     font-family: Palatino, "URW Palladio L", serif;
-    background-image: linear-gradient(to right,  goldenrod, gray);
+    background: whitesmoke;
 }
 
 /*CABEÇALHO*/
@@ -16,6 +17,13 @@ header{
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 10px 15px #212121;
+    float: left;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+.clear{
+    clear:both
 }
 
 /*Titulo*/
@@ -28,8 +36,10 @@ header{
 }
 
 #slogan{
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     margin-left:40px;
+    font-family: 'Lobster', cursive;
+    font-weight: normal;
 }
 
 #slogan p{
@@ -61,3 +71,4 @@ header a{
 a:hover{
     text-decoration: underline;
 }
+
