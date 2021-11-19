@@ -1,15 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Mohave:wght@300&display=swap');
 
+body{
+    background-color: var(--box-odd-bg-color);
+}
+
 main {
     width: 940px;
     margin: 20px auto;
     padding: 15px;
     font-family: 'Mohave', sans-serif;
     box-sizing: border-box;
+    color: var(--box-even-bg-color);
 }
 
 main #contato{
     display: flex;
+    align-items: center;
 }
 
 main i{
@@ -18,13 +24,14 @@ main i{
 }
 
 #ache p:nth-child(-n+5){
-    border-bottom: 1px solid rgb(75, 54, 0);
+    border-bottom: 1px solid var(--box-even-bg-color)
 }
 
 main p {
     font-size: 25px;
     padding: 5px 0px;
     margin: 0 10px;
+    text-align: center;
 }
 
 
@@ -34,4 +41,25 @@ main p {
     height: max-content;
     width: max-content;
     box-sizing: border-box;
+}
+
+.footer a{
+    color: var(--box-even-bg-color);
+    height: 40px;
+    line-height: 40px;
+}
+
+.footer i{
+    margin-left: 5px;
+    box-sizing: border-box;
+    border: 1px solid var(--box-even-bg-color);
+    border-radius: 4px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+}
+
+.footer a:hover i{
+    background-color: var(--box-even-bg-color);
+    color: var(--color-black);
 }

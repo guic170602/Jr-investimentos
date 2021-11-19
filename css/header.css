@@ -8,7 +8,7 @@ header{
     font-family: Palatino, "URW Palladio L", serif;
     color: var(--box-odd-bg-color);
     padding: 15px;
-    background: black;
+    background: var(--box-even-bg-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -62,19 +62,27 @@ header a{
     font-size: 1rem;
 }
 
-a::after{
+header .contato{
+    background-color: var(--box-odd-bg-color);
+    color: var(--box-even-bg-color)
+}
+
+header a::after{
     content: "";
     width: 0px;
     height: 1px;
     background-color: var(--color-black);
     display: block;
     margin: 0 auto;
-    transition: all 1s;
 }
 
-a:hover::after{
+header a:hover::after{
     content: "";
     width: inherit;
     background-color: var(--color-black);
     display: block;
+}
+
+.contato:hover::after{
+    background-color: black;
 }

@@ -125,3 +125,36 @@ main #icons article img:hover{
 }
 
 /*footer*/
+
+.master .footer a{
+    color: var(--box-even-bg-color);
+    display: inline-block;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    height: 30px;
+    line-height: 30px;
+}
+
+.master .footer i{
+    margin-left: 5px;
+    box-sizing: border-box;
+    border: 1px solid var(--box-even-bg-color);
+    border-radius: 4px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    padding:0 0 0 5px;
+}
+
+.master .footer a:hover i{
+    background-color: var(--box-even-bg-color);
+    color: var(--color-black);
+}
+
+.arrow{
+    position: fixed;
+    top: 85%;
+    left: 90%;
+    font-size: 3.5rem;
+    color: #193473;
+}
