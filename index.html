@@ -5,14 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JR Investimentos</title>
+    <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/variaveis.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/index.css">
+    <script src="https://kit.fontawesome.com/a9104466c9.js" crossorigin="anonymous"></script>
+</head>
 </head>
 <body>
     <header>
         <div id="area-logo">
-            <img src="imagens/logo.png" alt="logo" width="150px">
+            <img src="img/logo.png" alt="logo" width="120px">
             <div id="slogan">
                 <p>Investimentos</p>
                 <p>Consultoria Financeira</p>
@@ -20,52 +24,103 @@
         </div>
         <nav>  
             <ul>
-                <li><a href="index.html" id="atual">INICIO</a></li>
-                <li><a href="html/sobreNos.html">SOBRE NÓS</a></li>
-                <li><a href="html/produtos.html">PRODUTOS</a></li>
+                <li><a href="#inicio">INICIO</a></li>
+                <li><a href="#sobre">SOBRE NÓS</a></li>
+                <li><a href="#produtos">PRODUTOS</a></li>
+                <li><a href="#parceiros">PARCEIROS</a></li>
                 <li><a href="http://parceiro.mdconsig.com.br/login.do?action=sistema" target="_blank">INTRANET</a></li>
-                <li><a href="html/contato.html">CONTATO</a></li>
+                <li><a href="html/contato.html" class="contato">ENTRE EM CONTATO</a></li>
             </ul>
         </nav>
     </header>
     <div class="clear"></div>
     <main>
-        <h1>O que a JR Investimentos pode fazer por você hoje?</h1>
-        <nav>
-            <ul>
-                <li><a href="html/sobreNos.html"><h2>Sobre nós</h2></a></li>
-                <li><a href="html/produtos.html"><h2>Produto</h2></a></li>
-                <li><a href="html/contato.html"><h2>Contato</h2></a></li>
-            </ul>
-        </nav>
-        <section id="icons">
-            <article>
-                <img src="imagens/pessoas.gif" width="80px">
-                <h3>9521</h3>
-                <p>Clientes Satisfeitos</p>
-            </article>
-            <article>
-                <img src="imagens/localizacao.gif" width="80px">
-                <h3>23</h3>
-                <p>Cidades Representadas</p>
-            </article>
-            <article>
-                <img src="imagens/empresas.gif" width="80px">
-                <h3>27</h3>
-                <p>Parceiros de negocios</p>
-            </article>
+        <section class="color master" id="inicio">
+            <div class="box contatoBox">
+                <div>
+                    <h1>CREDITO INTELIGENTE PARA UM APROVEITAMENTO MELHOR</h1>
+                    <h2>Entre ja em contato com a JR Consig</h2>
+                    <a href="html/contato.html" class="contato ">Quero entrar em contato</a>
+                </div> 
+                <img src="img/consultoria.png" alt="Consultoria">
+            </div>
         </section>
-        <hr>
-        <section id="bancos">
-            <h2>Bancos Parceiros</h2>
-            <img src="imagens/bamcos/santander.png" width="225" height="150">
-            <img src="imagens/bamcos/daycoval.png" width="225" height="150">
-            <img src="imagens/bamcos/itau.png" width="225" height="150">
-            <img src="imagens/bamcos/bmg.png" width="225" height="150">
-            <img src="imagens/bamcos/pan.png" width="225" height="150">
-            <img src="imagens/bamcos/cetelem.png" width="225" height="150">
-            <img src="imagens/bamcos/banrisul.png" width="225" height="150">
-            <img src="imagens/bamcos/safra.png" width="225" height="150">
+        <section class="color master" id="sobre">
+            <div class="box">
+                <h1>Sobre JR Investimentos:</h1>
+                <section id="icons">
+                    <article>
+                        <img src="img/pessoas.gif" width="80px">
+                        <h3>9521</h3>
+                        <h4>Clientes Satisfeitos</h4>
+                    </article>
+                    <article>
+                        <img src="img/localizacao.gif" width="80px">
+                        <h3>23</h3>
+                        <h4>Cidades Representadas</h4>
+                    </article>
+                    <article>
+                        <img src="img/empresas.gif" width="80px">
+                        <h3>27</h3>
+                        <h4>Parceiros de negocios</h4>
+                    </article>
+                </section>
+                <article class="sobre">
+                    <p>A JR Investimentos traz ao mercado um know-how de mais de 10 anos de experiência em crédito consignado e tem como missão estampar sorrisos nos rostos de seus clientes ofertando um Crédito Inteligente, que é do tamanhodos seus sonhos. Com uma equipe comprometida e prezando pelo bom atendimento, a JR Investimentos pretende ser referência no Crédito Consignado, oferecendo crédito rápido e com as menores taxas do mercado. Atuamostambém no modelo de Franquias e Parcerias, expandindo sua marca em território nacional e prestando umserviço de qualidade a milhões de brasileiros em um negócio altamente lucrativo.</p>
+                    <div class="mvv">
+                        <h2 class="missao"><span class="num">1.</span>Qual é a nossa missão?</h2>
+                        <p>Estampar sorrisos nos rostos de nossos clientes, proporcionando a realização de sonhos através de um Crédito Inteligente.</p>
+                    </div>
+                    <div class="mvv">
+                        <h2 class="visao"><span class="num">2.</span>Qual é a nossa visão?</h2>
+                        <p>Ser referência no Consignado até 2023, em sinergia com nossos colaboradores engajados com a empresa.</p>
+                    </div>
+                    <div class="mvv">
+                        <h2 class="valores"><span class="num">3.</span>Quais são nossos valores</h2>
+                        <p>
+                            Comprometimento e atenção com todos os clientes<br>
+                            Gentileza e respeito em todo atendimento<br>
+                            Trabalho em equipe<br>
+                            Responsabilidade Social
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="color master" id="produtos">
+            <div class="box produtos">
+                <h1>Crédito Inteligente pensado para você!</h1>
+        <p>A JR Investimentos traz para seus clientes um Crédito Inteligente, com as menores taxas do mercado. Com a expertise no Crédito Consignado, a JR Investimentos consegue atender com qualidade clientes de todo Brasil, estampando sorriso em milhares de rostos e ao mesmo tempo, oferece para seus franqueados e parceiros, uma cesta de produtos financeiras altamente lucrativa, com grande procura e aceitação no mercado. <b>Confira nossos produtos:</b></p>
+        <ul>
+            <li>Consignado INSS</li>
+            <li>Servidores Públicos</li>
+            <li>Portabilidade e Refinanciamento</li>
+            <li>Cartão de Crédito</li>
+            <li>Crédito para Militares</li>
+            <li>Financiamento e Refinanciamento de Veículos</li>
+        </ul>
+            </div>
+        </section>
+        <section class="color master" id="parceiros">
+            <div class="box">
+                <section id="bancos">
+                    <h2>Trabalhamos com os seguintes bancos:</h2>
+                    <img src="img/bamcos/santander.png" width="225" height="150">
+                    <img src="img/bamcos/daycoval.png" width="225" height="150">
+                    <img src="img/bamcos/itau.png" width="225" height="150">
+                    <img src="img/bamcos/bmg.png" width="225" height="150">
+                    <img src="img/bamcos/pan.png" width="225" height="150">
+                    <img src="img/bamcos/cetelem.png" width="225" height="150">
+                    <img src="img/bamcos/banrisul.png" width="225" height="150">
+                    <img src="img/bamcos/safra.png" width="225" height="150">
+                </section>
+            </div>
+        </section>
+        <section class="color master">
+            <div class="box">
+                <h3>&copy; Todos os direitos reservados</h3>
+                <i class="fn-facebook"></i>
+            </div>
         </section>
     </main>
 </body>

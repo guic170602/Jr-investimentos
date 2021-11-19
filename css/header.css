@@ -1,16 +1,12 @@
-/*Geral*/
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-
-body{
-    font-size: 1em;
-    font-family: Palatino, "URW Palladio L", serif;
-    background: whitesmoke;
-}
+@import url('https://fonts.googleapis.com/css2?family=Mohave:wght@300&display=swap');
 
 /*CABEÇALHO*/
 
 header{
-    color: white;
+    font-size: 1em;
+    font-family: Palatino, "URW Palladio L", serif;
+    color: var(--box-odd-bg-color);
     padding: 15px;
     background: black;
     display: flex;
@@ -18,7 +14,7 @@ header{
     align-items: center;
     box-shadow: 0 10px 15px #212121;
     float: left;
-    width: 100vw;
+    width: 100%;
     box-sizing: border-box;
 }
 
@@ -44,6 +40,7 @@ header{
 
 #slogan p{
     margin: 10px 0;
+    color: var(--color-black);
 }
 
 /*Navegacao*/
@@ -60,15 +57,24 @@ header ul{
 header a{
     display: inline-block;
     padding: 10px;
-    color: white;
+    color: rgb(235, 235, 235);
     font-weight: bold;
+    font-size: 1rem;
 }
 
-#atual{
-    color: goldenrod;
+a::after{
+    content: "";
+    width: 0px;
+    height: 1px;
+    background-color: var(--color-black);
+    display: block;
+    margin: 0 auto;
+    transition: all 1s;
 }
 
-a:hover{
-    text-decoration: underline;
+a:hover::after{
+    content: "";
+    width: inherit;
+    background-color: var(--color-black);
+    display: block;
 }
-

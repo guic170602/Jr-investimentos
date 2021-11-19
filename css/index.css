@@ -1,42 +1,78 @@
-@import url('https://fonts.googleapis.com/css2?family=Mohave:wght@300&display=swap');
+/*Geral*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 main {
+    font-family: 'Lora', serif;
+}
+
+main p, main li{
+    font-size: 1.3rem;
+    text-align: justify;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+
+main h1{
+    text-align: center;
+}
+
+.master{
+    padding: 60px 0;
+}
+
+.color:nth-child(odd){
+    background-color: var(--box-odd-bg-color);
+    color: var(--box-even-bg-color);
+}
+
+.color:nth-child(even){
+    background-color: var(--box-even-bg-color);
+    color: var(--color-black);
+}
+
+.box{
     width: 940px;
     box-sizing: border-box;
-    margin: 0px auto 10px;
-    padding: 15px;
-    font-family: 'Mohave', sans-serif;
+    margin: 0 auto;
 }
 
-main nav{
-    margin: 20px 35px 10px 0px;
-}
+/*Contato*/
 
-main ul{
+.contatoBox{
     display: flex;
-    justify-content: space-evenly;
-    border-radius: 30px;
-    height: 2rem;
-    line-height: 2rem;
+    align-items: center;
 }
 
-main > h1{
-    text-align: center;
-    margin: 15px 20px 0 0;
+.contatoBox h1{
+    text-align: left;
+    margin-bottom: 10px;
 }
 
-main a{
-    font-family: Arial, Helvetica, sans-serif;
-    color: black;
+.contato{
+    display: inline-block;
+    color:var(--color-black);
+    background-color: var(--box-even-bg-color);
+    border-radius: 10px;
+    padding: 10px;
 }
 
-main a:hover{
-    text-decoration: underline;
+main .contato{
+    margin-top: 20px;
 }
 
-main a h2{
-    font-size: 1.5rem;
+.contatoBox{
+    display: flex;
+    justify-content: space-between;
 }
+
+.contatoBox img, .contatoBox div{
+    width: 49%;
+    font-size: 1.2rem;
+}
+
+/*Sobre*/
 
 main #icons{
     display: flex;
@@ -45,24 +81,47 @@ main #icons{
     justify-content: space-evenly;
     text-align: center;
     padding: 20px 0;
-    box-shadow: 7px 7px 7px rgba(185, 185, 185, 0.35);
-    margin: 20px 25px 10px;
+    margin: 40px auto;
+    color: black;
 }
 
 main #icons article img{
     width: 4rem;
-    transition: 0.5s linear;
+    transition: 0.3s linear;
 }
 
 main #icons article img:hover{
-    width: 5.5rem;
-    transition: 0.5s linear;
+    width: 5rem;
 }
 
-#bancos{
+.mvv{
+    margin-top: 30px;
+}
+
+.num{
+    margin-right: 10px;
+}
+
+/*Produtos*/
+
+.produtos h1{
+    margin-bottom: 10px;
+}
+
+.produtos ul{
     margin-top: 20px;
 }
 
-#bancos h2{
-    margin-bottom: 10px;
+.produtos li{
+    list-style: circle;
+    margin-top: 10px;
 }
+
+/*Bancos Parceiros*/
+
+#bancos h2{
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/*footer*/
