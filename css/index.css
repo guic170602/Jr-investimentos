@@ -9,7 +9,7 @@ main {
 
 main p, main li{
     font-size: 1.3rem;
-    text-align: justify;
+    text-align: left;
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
 }
@@ -38,11 +38,14 @@ main h1{
     margin: 0 auto;
 }
 
+
 /*Contato*/
 
 .contatoBox{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
 }
 
 .contatoBox h1{
@@ -60,11 +63,6 @@ main h1{
 
 main .contato{
     margin-top: 20px;
-}
-
-.contatoBox{
-    display: flex;
-    justify-content: space-between;
 }
 
 .contatoBox img, .contatoBox div{
@@ -119,12 +117,29 @@ main #icons article img:hover{
 
 /*Bancos Parceiros*/
 
+#bancos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 #bancos h2{
     margin-bottom: 25px;
     text-align: center;
+    width: 100%;
+}
+
+#bancos img{
+    margin: 5px;
 }
 
 /*footer*/
+
+.master .footer{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
 
 .master .footer a{
     color: var(--box-even-bg-color);
@@ -135,7 +150,7 @@ main #icons article img:hover{
     line-height: 30px;
 }
 
-.master .footer i{
+.master .footer .social i{
     margin-left: 5px;
     box-sizing: border-box;
     border: 1px solid var(--box-even-bg-color);
@@ -151,10 +166,42 @@ main #icons article img:hover{
     color: var(--color-black);
 }
 
-.arrow{
-    position: fixed;
-    top: 85%;
-    left: 90%;
+.master .footer h3{
+    margin-top: 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+.arrow i{
+    margin-top: 1rem;
     font-size: 3.5rem;
     color: #193473;
+}
+
+@media screen and (max-width: 360px) {
+    .box{
+        width: 75%;
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+    .contatoBox img{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .box{
+        width: 75%;
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+    .contatoBox img{
+        display: none;
+    }
+    .contatoBox div{
+        width: 100%;
+    }
+    main #icons{
+        flex-direction: column;
+    }
 }

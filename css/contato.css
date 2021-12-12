@@ -5,8 +5,10 @@ body{
 }
 
 main {
-    width: 940px;
-    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 20px 0;
     padding: 15px;
     font-family: 'Mohave', sans-serif;
     box-sizing: border-box;
@@ -14,8 +16,15 @@ main {
 }
 
 main #contato{
+    width: 90%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: space-evenly;
+}
+
+main #ache{
+    max-width: 300px;
 }
 
 main i{
@@ -23,14 +32,13 @@ main i{
     margin-right: 10px;
 }
 
-#ache p:nth-child(-n+5){
+#ache p:nth-child(-n+4){
     border-bottom: 1px solid var(--box-even-bg-color)
 }
 
 main p {
     font-size: 25px;
     padding: 5px 0px;
-    margin: 0 10px;
     text-align: center;
 }
 
@@ -41,6 +49,7 @@ main p {
     height: max-content;
     width: max-content;
     box-sizing: border-box;
+    border: 1px solid var(--box-even-bg-color);
 }
 
 .footer a{
@@ -62,4 +71,10 @@ main p {
 .footer a:hover i{
     background-color: var(--box-even-bg-color);
     color: var(--color-black);
+}
+
+@media screen and (max-width: 930px){
+    main #ache{
+        margin: 1rem 0 0;
+    }    
 }

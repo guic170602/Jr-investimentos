@@ -10,12 +10,16 @@ header{
     padding: 15px;
     background: var(--box-even-bg-color);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     box-shadow: 0 10px 15px #212121;
     float: left;
     width: 100%;
     box-sizing: border-box;
+}
+
+.menu{
+    display: none;
 }
 
 .clear{
@@ -25,7 +29,6 @@ header{
 /*Titulo*/
 
 #area-logo{
-    margin-left: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,13 +48,11 @@ header{
 
 /*Navegacao*/
 
-header nav{
-    margin-right: 3rem;
-}
-
 header ul{
     display: flex;
-    width: max-content;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 header a{
@@ -85,4 +86,21 @@ header a:hover::after{
 
 .contato:hover::after{
     background-color: black;
+}
+
+@media screen and (max-width:1024px){
+    header{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    #area-logo{
+        flex-direction: column;
+        justify-content: center;
+    }
+    #slogan{
+        text-align: center;
+        margin-left: 0;
+    }
 }
