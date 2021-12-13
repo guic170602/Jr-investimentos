@@ -173,6 +173,10 @@ main #icons article img:hover{
 }
 
 .arrow i{
+    border-radius: 100%;
+}
+
+.arrow i{
     margin-top: 1rem;
     font-size: 3.5rem;
     color: #193473;
