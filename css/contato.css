@@ -24,8 +24,8 @@ main #contato{
 }
 
 main #ache{
-    width: 40%;
     min-width: 320px;
+    width: 40%;
 }
 
 main i{
