@@ -11,6 +11,7 @@ header{
     background: var(--box-even-bg-color);
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     align-items: center;
     box-shadow: 0 10px 15px #212121;
     float: left;
@@ -48,6 +49,10 @@ header{
 
 /*Navegacao*/
 
+#menu_bar{
+    display: none;
+}
+
 header ul{
     display: flex;
     width: 100%;
@@ -65,7 +70,8 @@ header a{
 
 header .contato{
     background-color: var(--box-odd-bg-color);
-    color: var(--box-even-bg-color)
+    color: var(--box-even-bg-color);
+    width: max-content;
 }
 
 header a::after{
@@ -88,13 +94,47 @@ header a:hover::after{
     background-color: black;
 }
 
-@media screen and (max-width:1024px){
+@media screen and (max-width:1110px){
     header{
         flex-direction: column;
     }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width:720px) {
+    header{
+        flex-direction: row;
+        padding: 15px 0;
+    }
+    nav{
+        display: none;
+    }
+    #menu_bar{
+        display: inline-block;
+        font-size: 2rem;
+        cursor: pointer;
+        padding: 10px;
+    }
+    .active{
+        display: inline-block;
+        width: 100%;
+    }
+    .active ul{
+        flex-direction: column; 
+        align-items: center;
+        width: 100%;
+    }
+    .active ul li{
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .active ul li:nth-child(-n+5){
+        border-bottom: 1px solid var(--box-odd-bg-color)
+    }
+}
+
+@media screen and (max-width: 500px) {
     #area-logo{
         flex-direction: column;
         justify-content: center;
@@ -102,5 +142,8 @@ header a:hover::after{
     #slogan{
         text-align: center;
         margin-left: 0;
+    }
+    #slogan p{
+        font-size: 1.4rem;
     }
 }
