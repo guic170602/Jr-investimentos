@@ -49,6 +49,8 @@ main p {
     padding: 10px 0;
     height: max-content;
     width: max-content;
+    max-width: 550px;
+    max-height: 450px;
     box-sizing: border-box;
     border: 1px solid var(--box-even-bg-color);
 }
@@ -74,8 +76,9 @@ main p {
     color: var(--color-black);
 }
 
-@media screen and (max-width: 930px){
+@media screen and (max-width: 970px){
     main #ache{
+        width: 70%;
         margin: 1rem 0 0;
     }    
 }
