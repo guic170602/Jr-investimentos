@@ -100,8 +100,29 @@ main #icons article img:hover{
     margin-right: 10px;
 }
 
+.mvv div{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+
+}
+
+.mvv div span{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
 #sobre{
     background-color: #193473;
+}
+
+.mvv p{
+    display: none;
+}
+
+p.none{
+    display: block;
+    margin-top: 10px;
 }
 
 /*Produtos*/
