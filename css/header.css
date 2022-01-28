@@ -107,6 +107,7 @@ header a:hover::after{
     }
     nav{
         display: none;
+        animation: up_to_bottom 1s 1 ease;
     }
     #menu_bar{
         display: inline-block;
@@ -145,5 +146,12 @@ header a:hover::after{
     }
     #slogan p{
         font-size: 1.4rem;
+    }
+}
+
+@keyframes up_to_bottom {
+    from {
+      opacity: 0;
+      transform: translateY(-100px);
     }
 }
