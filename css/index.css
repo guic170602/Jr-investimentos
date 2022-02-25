@@ -1,38 +1,39 @@
 /*Geral*/
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
-
 main {
     font-family: 'Lora', serif;
 }
 
-main p, main li{
+main p,
+main li {
     font-size: 1.3rem;
     text-align: left;
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
 }
 
-main h1{
+main h1 {
     text-align: center;
 }
 
-.master{
+.master {
     padding: 60px 0;
 }
 
-.color:nth-child(odd){
+.color:nth-child(odd) {
     background-color: var(--box-odd-bg-color);
     color: var(--box-even-bg-color);
 }
 
-.color:nth-child(even){
+.color:nth-child(even) {
     background-color: var(--box-even-bg-color);
     color: var(--color-black);
 }
 
-.box{
+.box {
     width: 940px;
     box-sizing: border-box;
     margin: 0 auto;
@@ -41,38 +42,40 @@ main h1{
 
 /*Contato*/
 
-.contatoBox{
+.contatoBox {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
 }
 
-.contatoBox h1{
+.contatoBox h1 {
     text-align: left;
     margin-bottom: 10px;
 }
 
-.contato{
+.contato {
     display: inline-block;
-    color:var(--color-black);
+    color: var(--color-black);
     background-color: var(--box-even-bg-color);
     border-radius: 10px;
     padding: 10px;
 }
 
-main .contato{
+main .contato {
     margin-top: 20px;
 }
 
-.contatoBox img, .contatoBox div{
+.contatoBox img,
+.contatoBox div {
     width: 49%;
     font-size: 1.2rem;
 }
 
+
 /*Sobre*/
 
-main #icons{
+main #icons {
     display: flex;
     border-radius: 10px;
     background-color: white;
@@ -83,90 +86,92 @@ main #icons{
     color: black;
 }
 
-main #icons article img{
+main #icons article img {
     width: 4rem;
     transition: 0.3s linear;
 }
 
-main #icons article img:hover{
+main #icons article img:hover {
     width: 5rem;
 }
 
-.mvv{
+.mvv {
     margin-top: 30px;
 }
 
-.num{
+.num {
     margin-right: 10px;
 }
 
-.mvv div{
+.mvv div {
     display: flex;
     justify-content: space-between;
     cursor: pointer;
-
 }
 
-.mvv div span{
+.mvv div span {
     font-size: 1.5rem;
     font-weight: bold;
 }
 
-#sobre{
+#sobre {
     background-color: #193473;
 }
 
-.mvv p{
+.mvv p {
     display: none;
 }
 
-p.none{
+p.none {
     display: block;
     margin-top: 10px;
 }
 
+
 /*Produtos*/
 
-.produtos h1{
+.produtos h1 {
     margin-bottom: 10px;
 }
 
-.produtos ul{
+.produtos ul {
     margin-top: 20px;
 }
 
-.produtos li{
+.produtos li {
     list-style: circle;
     margin-top: 10px;
 }
 
+
 /*Bancos Parceiros*/
 
-#bancos{
+#bancos {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-#bancos h2{
+#bancos h2 {
     margin-bottom: 25px;
     text-align: center;
     width: 100%;
 }
 
-#bancos img{
+#bancos img {
     margin: 5px;
 }
 
+
 /*footer*/
 
-.master .footer{
+.master .footer {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
-.master .footer a{
+.master .footer a {
     color: var(--box-even-bg-color);
     display: inline-block;
     font-size: 1.3rem;
@@ -175,7 +180,7 @@ p.none{
     line-height: 30px;
 }
 
-.master .footer .social i{
+.master .footer .social i {
     margin-left: 5px;
     box-sizing: border-box;
     border: 1px solid var(--box-even-bg-color);
@@ -183,74 +188,75 @@ p.none{
     width: 30px;
     height: 30px;
     line-height: 30px;
-    padding:0 0 0 5px;
+    padding: 0 0 0 5px;
 }
 
-.master .footer a:hover i{
+.master .footer a:hover i {
     background-color: var(--box-even-bg-color);
     color: var(--color-black);
 }
 
-.master .footer h3{
+.master .footer h3 {
     margin-top: 1rem;
     width: 100%;
     text-align: center;
 }
 
-.arrow i{
+.arrow i {
     border-radius: 100%;
 }
 
-.arrow i{
+.arrow i {
     margin-top: 1rem;
     font-size: 3.5rem;
     color: #193473;
 }
 
 @media screen and (max-width: 500px) {
-    .box{
+    .box {
         width: 75%;
         box-sizing: border-box;
         margin: 0 auto;
     }
-    .contatoBox img{
+    .contatoBox img {
         display: none;
     }
-    .contatoBox h1{
+    .contatoBox h1 {
         font-size: 1.3rem;
         margin: 0;
     }
-    .contatoBox h2{
+    .contatoBox h2 {
         display: none;
     }
-    main h1{
+    main h1 {
         font-size: 1.3rem;
     }
-    main h2{
+    main h2 {
         font-size: 1.2rem;
     }
-    main h3{
+    main h3 {
         font-size: 1.1rem;
     }
-    main p, main li{
+    main p,
+    main li {
         font-size: 1rem;
     }
 }
 
 @media screen and (max-width: 950px) {
-    .box{
+    .box {
         width: 75%;
         box-sizing: border-box;
         margin: 0 auto;
     }
-    .contatoBox img{
+    .contatoBox img {
         display: none;
     }
-    .contatoBox div{
+    .contatoBox div {
         width: max-content;
         margin: 0 auto;
     }
-    main #icons{
+    main #icons {
         flex-direction: column;
     }
 }

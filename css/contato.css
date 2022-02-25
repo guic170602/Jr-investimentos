@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Mohave:wght@300&display=swap');
-
-body{
+body {
     background-color: var(--box-odd-bg-color);
 }
 
@@ -8,14 +7,15 @@ main {
     display: flex;
     justify-content: center;
     width: 100%;
-    margin: 20px 0;
-    padding: 15px;
+    align-items: center;
     font-family: 'Mohave', sans-serif;
     box-sizing: border-box;
     color: var(--box-even-bg-color);
+    position: relative;
+    top: 50px;
 }
 
-main #contato{
+main #contato {
     width: 90%;
     display: flex;
     flex-wrap: wrap;
@@ -23,17 +23,17 @@ main #contato{
     justify-content: space-evenly;
 }
 
-main #ache{
+main #ache {
     min-width: 300px;
     width: 40%;
 }
 
-main i{
+main i {
     font-size: 30px;
     margin-right: 10px;
 }
 
-#ache p:nth-child(-n+4){
+#ache p:nth-child(-n+4) {
     border-bottom: 1px solid var(--box-even-bg-color)
 }
 
@@ -43,8 +43,7 @@ main p {
     text-align: center;
 }
 
-
-#ache{
+#ache {
     margin-left: 10px;
     padding: 10px 0;
     height: max-content;
@@ -55,13 +54,13 @@ main p {
     border: 1px solid var(--box-even-bg-color);
 }
 
-.footer a{
+.footer a {
     color: var(--box-even-bg-color);
     height: 40px;
     line-height: 40px;
 }
 
-.footer i{
+.footer i {
     margin-left: 5px;
     box-sizing: border-box;
     border: 1px solid var(--box-even-bg-color);
@@ -71,14 +70,14 @@ main p {
     line-height: 40px;
 }
 
-.footer a:hover i{
+.footer a:hover i {
     background-color: var(--box-even-bg-color);
     color: var(--color-black);
 }
 
-@media screen and (max-width: 970px){
-    main #ache{
+@media screen and (max-width: 970px) {
+    main #ache {
         width: 70%;
         margin: 1rem 0 0;
-    }    
+    }
 }
