@@ -7,10 +7,10 @@ header {
     font-size: 1em;
     font-family: Palatino, "URW Palladio L", serif;
     color: var(--box-odd-bg-color);
-    padding: 0, 15px;
+    padding: 0 20px;
     background: var(--box-even-bg-color);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
     box-shadow: 0 10px 15px #212121;
@@ -79,34 +79,26 @@ header .contato {
     width: max-content;
 }
 
-header a::after {
+header nav ul li:nth-child(-n+4) a::after {
     content: "";
-    width: 0px;
-    height: 1px;
+    max-width: 0;
+    height: 3px;
+    border-radius: 10px;
     background-color: var(--color-black);
     display: block;
     margin: 0 auto;
+    transition: max-width 0.5s ease-out;
 }
 
-header a:hover::after {
+header nav ul li:nth-child(-n+4) a:hover::after {
     content: "";
-    width: inherit;
+    max-width: 1000px;
     background-color: var(--color-black);
     display: block;
+    transition: max-width 0.25s ease-in;
 }
 
-.contato:hover::after {
-    background-color: black;
-}
-
-
-/* @media screen and (max-width:1110px) {
-    header {
-        flex-direction: column;
-    }
-} */
-
-@media screen and (max-width:1110px) {
+@media screen and (max-width:1020px) {
     header {
         padding: 15px 0;
     }
@@ -127,10 +119,11 @@ header a:hover::after {
     .active {
         display: inline-block;
         width: max-content;
-        padding: 15px;
+        padding: 0 15px 15px;
         z-index: 0;
         border-radius: 0 0 12px 12px;
-        animation: aparece 1s 1 ease;
+        animation: abrir .5s 1 ease;
+        overflow: hidden;
     }
     .active ul {
         flex-direction: column;
@@ -138,14 +131,13 @@ header a:hover::after {
         width: 100%;
     }
     .active ul li {
-        margin-top: 10px;
         width: 100%;
         display: flex;
         justify-content: center;
     }
 }
 
-@media screen and (max-width: 1110px) {
+@media screen and (max-width: 900px) {
     #area-logo {
         justify-content: center;
     }
@@ -167,13 +159,24 @@ header a:hover::after {
     }
 }
 
-@keyframes aparece {
-    from {
-        opacity: 0;
-        transform: translateY(-200px);
+@keyframes abrir {
+    0% {
+        max-height: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
     }
-    to {
-        opacity: 1;
-        transform: translateY(0px);
+    100% {
+        max-height: 500px;
+    }
+}
+
+@keyframes tiraAltura {
+    0% {
+        height: 245px;
+    }
+    100% {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        height: 0px;
     }
 }

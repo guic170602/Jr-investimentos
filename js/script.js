@@ -68,19 +68,17 @@ function missaoVisaoValores() {
 
 function scrol() {
     const inicio = document.querySelector('#linkInicio')
-    const top = document.querySelector('#top')
     const sectionInicio = document.querySelector('#inicio')
-    inicio.addEventListener('click', () => window.scrollTo({ top: sectionInicio.getBoundingClientRect().top + window.scrollY - 90, behavior: 'smooth' }))
-    top.addEventListener('click', () => window.scrollTo({ top: sectionInicio.getBoundingClientRect().top + window.scrollY - 90, behavior: 'smooth' }))
+    inicio.addEventListener('click', () => window.scrollTo({ top: sectionInicio.getBoundingClientRect().top + window.scrollY - 100, behavior: 'smooth' }))
     const sobre = document.querySelector('#linkSobre')
     const sectionSobre = document.querySelector('#sobre')
-    sobre.addEventListener('click', () => window.scrollTo({ top: sectionSobre.getBoundingClientRect().top + window.scrollY - 90, behavior: 'smooth' }))
+    sobre.addEventListener('click', () => window.scrollTo({ top: sectionSobre.getBoundingClientRect().top + window.scrollY - 100, behavior: 'smooth' }))
     const produtos = document.querySelector('#linkProdutos')
     const sectionProdutos = document.querySelector('#produtos')
-    produtos.addEventListener('click', () => window.scrollTo({ top: sectionProdutos.getBoundingClientRect().top + window.scrollY - 90, behavior: 'smooth' }))
+    produtos.addEventListener('click', () => window.scrollTo({ top: sectionProdutos.getBoundingClientRect().top + window.scrollY - 100, behavior: 'smooth' }))
     const parceiros = document.querySelector('#linkParceiros')
     const sectionParceiros = document.querySelector('#parceiros')
-    parceiros.addEventListener('click', () => window.scrollTo({ top: sectionParceiros.getBoundingClientRect().top + window.scrollY - 90, behavior: 'smooth' }))
+    parceiros.addEventListener('click', () => window.scrollTo({ top: sectionParceiros.getBoundingClientRect().top + window.scrollY - 100, behavior: 'smooth' }))
 }
 
 scrol()
