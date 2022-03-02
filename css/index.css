@@ -209,6 +209,11 @@ p.none {
     text-align: center;
 }
 
+.master .footer h3 a {
+    color: #193473;
+    text-decoration: underline;
+}
+
 @media screen and (max-width: 500px) {
     .box {
         width: 75%;
